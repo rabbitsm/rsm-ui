@@ -6,8 +6,14 @@
   "author": "maddhruv <dhruvjainpenny@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "next": "^7.0.2",
     "react": "^16.6.0",
+    "react-dom": "^16.6.0",
     "styled-components": "^4.0.2"
+  },
+  "peerDependencies": {
+    "react": "^16.6.0",
+    "react-dom": "^16.6.0"
   },
   "devDependencies": {
     "@babel/core": "^7.1.2",
@@ -18,6 +24,8 @@
     "webpack-cli": "^3.1.2"
   },
   "scripts": {
-    "build": "webpack --mode=production"
+    "build": "webpack --mode=production",
+    "docs": "next start",
+    "docs:dev": "next -p 7000"
   }
 }
