@@ -15,5 +15,25 @@ module.exports = {
         loader: 'babel-loader'
       }
     ]
+  },
+  externals: {
+    "react": {
+      root: "React",
+      commonjs2: "react",
+      commonjs: "react",
+      amd: "react"
+    },
+    "react-dom": {
+      root: "ReactDOM",
+      commonjs2: "react-dom",
+      commonjs: "react-dom",
+      amd: "react-dom"
+    },
+    "styled-components": {
+      root: "styled",
+      commonjs2: "styled-components",
+      commonjs: "styled-components",
+      amd: "styled-components"
+    }
   }
 }
