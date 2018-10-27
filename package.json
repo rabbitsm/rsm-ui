@@ -6,7 +6,6 @@
   "author": "maddhruv <dhruvjainpenny@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "next": "^7.0.2",
     "react": "^16.6.0",
     "react-dom": "^16.6.0",
     "styled-components": "^4.0.2"
@@ -16,16 +15,16 @@
     "react-dom": "^16.6.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.1.2",
-    "@babel/preset-env": "^7.1.0",
-    "@babel/preset-react": "^7.0.0",
+    "@storybook/react": "^3.4.11",
+    "babel-core": "^6.26.3",
     "babel-loader": "^8.0.4",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
     "webpack": "^4.23.1",
     "webpack-cli": "^3.1.2"
   },
   "scripts": {
     "build": "webpack --mode=production",
-    "docs": "next start",
-    "docs:dev": "next -p 7000"
+    "docs": "start-storybook -p 9019 -c .storybook"
   }
 }
